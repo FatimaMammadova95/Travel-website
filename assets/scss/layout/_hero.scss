@@ -1,0 +1,45 @@
+#hero {
+  background-image: url("../image/image\ 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0px -500px 500px -500px #ffffff;
+  .hero {
+    h1 {
+      font-size: 72px;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 82.79px;
+      max-width: 700px;
+      padding: 100px 0;
+    }
+    .categories {
+      padding-bottom: 200px;
+      h2 {
+        font-size: 32px;
+        font-weight: 700;
+        color: #ffffff;
+        padding-bottom: 25px;
+      }
+      ul {
+        @include flexbox;
+        li {
+          a {
+            @include flexbox;
+            flex-direction: column;
+            gap: 5px;
+            p {
+              color: #ffffff;
+              opacity: 40%;
+            }
+            &:hover{
+                p{
+                    opacity: 100%;
+                }
+            }
+          }
+        }
+      }
+    }
+  }
+}

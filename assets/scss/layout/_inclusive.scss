@@ -1,0 +1,16 @@
+#inclusive {
+  padding-top: 50px;
+  .inclusive {
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #000000;
+      padding-bottom: 25px;
+    }
+    swiper-container {
+      swiper-slide {
+        @extend %card;
+      }
+    }
+  }
+}

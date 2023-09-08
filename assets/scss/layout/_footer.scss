@@ -1,0 +1,41 @@
+footer {
+  background-color: #141414;
+  .footer {
+    padding: 30px 0;
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      .footer-text {
+        @include flexbox(space-between, start);
+        ul {
+          li {
+            padding: 5px;
+            a {
+              font-size: 13px;
+              color: #808080;
+            }
+          }
+        }
+      }
+      .info-buttons {
+        @include flexbox;
+        button {
+          color: #808080;
+          border: 1px solid #808080;
+          background-color: transparent;
+          font-size: 13px;
+          padding: 10px 15px;
+        }
+        .social {
+          @include flexbox;
+          gap: 10px;
+        }
+      }
+      .copyright{
+        font-size: 11px;
+        color: #808080;
+      }
+    }
+  }
+}

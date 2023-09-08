@@ -1,0 +1,31 @@
+header {
+position: fixed;
+z-index: 1000;
+width: 100%;
+  .header {
+    padding: 24px 2%;
+    @include flexbox;
+    nav {
+      ul {
+        @include flexbox;
+        gap: 8px;
+        li {
+          padding: 8px;
+          &.home {
+            border-bottom: 1px solid #ffffff;
+          }
+          a {
+            color: #ffffff;
+            opacity: 70%;
+            &:hover{
+                opacity: 100%;
+            }
+            &.signup{
+                font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+}

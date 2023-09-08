@@ -1,0 +1,106 @@
+#app {
+  background-image: url("../image/image 21.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .app {
+    padding: 80px 0 110px 0;
+    .row {
+      .col-3 {
+        position: relative;
+        img {
+          position: absolute;
+          top: 0;
+          &.screen {
+            top: 15px;
+            left: 25px;
+          }
+        }
+      }
+      .col-9 {
+        h1 {
+          font-size: 48px;
+          font-weight: 700;
+          color: #ffffff;
+        }
+        p {
+          font-size: 24px;
+          color: #ffffff;
+          max-width: 750px;
+          padding: 30px 0 50px 0;
+        }
+        .connection {
+          display: flex;
+          gap: 25px;
+          .mobile-email {
+            .buttons {
+              button {
+                padding: 8px 16px;
+                border-radius: 16px;
+                border-color: transparent;
+                background-color: transparent;
+                color: #ffffff;
+                font-size: 20px;
+                &.active {
+                  background-color: #ffffff66;
+                }
+              }
+            }
+            p {
+              font-size: 14px;
+              padding: 20px 0;
+            }
+            .search {
+              position: relative;
+              input[type="search"] {
+                width: 450px;
+                height: 60px;
+                background-color: #ffffff66;
+                border-color: transparent;
+                border-radius: 16px;
+                padding: 8px 16px;
+                &:focus {
+                  outline-color: #2659c3;
+                }
+              }
+              .holder {
+                position: absolute;
+                top: 5%;
+                left: 20px;
+                font-size: 16px;
+              }
+              .search-button {
+                position: absolute;
+                left: 325px;
+                top: 15%;
+                background-color: #ffffff;
+                border-color: transparent;
+                color: #2659c3;
+                padding: 12px 32px;
+                border-radius: 32px;
+                font-weight: 700;
+                &:hover {
+                  color: #ffffff;
+                  background-color: #2659c3;
+                }
+              }
+            }
+          }
+          .or {
+            @include flexbox;
+            flex-direction: column;
+
+            .line {
+              transform: rotate(90deg);
+              color: #ffffff;
+            }
+          }
+          .store {
+            @include flexbox;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,681 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Martel+Sans&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  text-decoration: none !important;
+  font-family: "Martel Sans", sans-serif !important;
+}
+
+i {
+  font-family: "Font Awesome 6 Free" !important;
+}
+
+#honeymoon .honeymoon swiper-container swiper-slide .card, #inclusive .inclusive swiper-container swiper-slide .card, #viewed .cards .card, #popular .popular swiper-container swiper-slide .card {
+  max-width: 330px;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 16px;
+}
+#honeymoon .honeymoon swiper-container swiper-slide .card .img, #inclusive .inclusive swiper-container swiper-slide .card .img, #viewed .cards .card .img, #popular .popular swiper-container swiper-slide .card .img {
+  position: relative;
+}
+#honeymoon .honeymoon swiper-container swiper-slide .card .img img, #inclusive .inclusive swiper-container swiper-slide .card .img img, #viewed .cards .card .img img, #popular .popular swiper-container swiper-slide .card .img img {
+  border-radius: 16px;
+}
+#honeymoon .honeymoon swiper-container swiper-slide .card .img .fa-heart, #inclusive .inclusive swiper-container swiper-slide .card .img .fa-heart, #viewed .cards .card .img .fa-heart, #popular .popular swiper-container swiper-slide .card .img .fa-heart {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  color: #ffffff;
+}
+#honeymoon .honeymoon swiper-container swiper-slide .card .text, #inclusive .inclusive swiper-container swiper-slide .card .text, #viewed .cards .card .text, #popular .popular swiper-container swiper-slide .card .text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 0;
+}
+#honeymoon .honeymoon swiper-container swiper-slide .card .text .part-1 .title, #inclusive .inclusive swiper-container swiper-slide .card .text .part-1 .title, #viewed .cards .card .text .part-1 .title, #popular .popular swiper-container swiper-slide .card .text .part-1 .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#honeymoon .honeymoon swiper-container swiper-slide .card .text .part-1 .title h1, #inclusive .inclusive swiper-container swiper-slide .card .text .part-1 .title h1, #viewed .cards .card .text .part-1 .title h1, #popular .popular swiper-container swiper-slide .card .text .part-1 .title h1 {
+  font-size: 24px;
+  color: #000000;
+  padding: 0;
+}
+#honeymoon .honeymoon swiper-container swiper-slide .card .text .part-1 .title p, #inclusive .inclusive swiper-container swiper-slide .card .text .part-1 .title p, #viewed .cards .card .text .part-1 .title p, #popular .popular swiper-container swiper-slide .card .text .part-1 .title p {
+  font-size: 24px;
+}
+#honeymoon .honeymoon swiper-container swiper-slide .card .text .part-1 .title p i, #inclusive .inclusive swiper-container swiper-slide .card .text .part-1 .title p i, #viewed .cards .card .text .part-1 .title p i, #popular .popular swiper-container swiper-slide .card .text .part-1 .title p i {
+  font-size: 20px;
+}
+#honeymoon .honeymoon swiper-container swiper-slide .card .text .part-1 .days, #inclusive .inclusive swiper-container swiper-slide .card .text .part-1 .days, #viewed .cards .card .text .part-1 .days, #popular .popular swiper-container swiper-slide .card .text .part-1 .days {
+  opacity: 50%;
+}
+#honeymoon .honeymoon swiper-container swiper-slide .card .text .part-2, #inclusive .inclusive swiper-container swiper-slide .card .text .part-2, #viewed .cards .card .text .part-2, #popular .popular swiper-container swiper-slide .card .text .part-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#honeymoon .honeymoon swiper-container swiper-slide .card .text .part-2 .service, #inclusive .inclusive swiper-container swiper-slide .card .text .part-2 .service, #viewed .cards .card .text .part-2 .service, #popular .popular swiper-container swiper-slide .card .text .part-2 .service {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+#honeymoon .honeymoon swiper-container swiper-slide .card .text .part-2 .service i, #inclusive .inclusive swiper-container swiper-slide .card .text .part-2 .service i, #viewed .cards .card .text .part-2 .service i, #popular .popular swiper-container swiper-slide .card .text .part-2 .service i {
+  opacity: 50%;
+}
+#honeymoon .honeymoon swiper-container swiper-slide .card .text .part-2 .service p, #inclusive .inclusive swiper-container swiper-slide .card .text .part-2 .service p, #viewed .cards .card .text .part-2 .service p, #popular .popular swiper-container swiper-slide .card .text .part-2 .service p {
+  opacity: 50%;
+  font-size: 12px;
+}
+#honeymoon .honeymoon swiper-container swiper-slide .card .text .part-3 ol, #inclusive .inclusive swiper-container swiper-slide .card .text .part-3 ol, #viewed .cards .card .text .part-3 ol, #popular .popular swiper-container swiper-slide .card .text .part-3 ol {
+  list-style-type: disc;
+  margin: 0;
+  padding: 20px;
+}
+#honeymoon .honeymoon swiper-container swiper-slide .card .text .part-3 ol li, #inclusive .inclusive swiper-container swiper-slide .card .text .part-3 ol li, #viewed .cards .card .text .part-3 ol li, #popular .popular swiper-container swiper-slide .card .text .part-3 ol li {
+  opacity: 50%;
+}
+#honeymoon .honeymoon swiper-container swiper-slide .card .text .part-4 p, #inclusive .inclusive swiper-container swiper-slide .card .text .part-4 p, #viewed .cards .card .text .part-4 p, #popular .popular swiper-container swiper-slide .card .text .part-4 p {
+  font-size: 24px;
+  font-weight: 700;
+}
+#honeymoon .honeymoon swiper-container swiper-slide .card .text .part-4 p sub, #inclusive .inclusive swiper-container swiper-slide .card .text .part-4 p sub, #viewed .cards .card .text .part-4 p sub, #popular .popular swiper-container swiper-slide .card .text .part-4 p sub {
+  font-size: 12px;
+  opacity: 50%;
+}
+#honeymoon .honeymoon swiper-container swiper-slide .card .text .part-4 p span, #inclusive .inclusive swiper-container swiper-slide .card .text .part-4 p span, #viewed .cards .card .text .part-4 p span, #popular .popular swiper-container swiper-slide .card .text .part-4 p span {
+  font-size: 16px;
+  font-weight: 100;
+  text-decoration: line-through !important;
+}
+
+header {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+header .header {
+  padding: 24px 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+header .header nav ul li {
+  padding: 8px;
+}
+header .header nav ul li.home {
+  border-bottom: 1px solid #ffffff;
+}
+header .header nav ul li a {
+  color: #ffffff;
+  opacity: 70%;
+}
+header .header nav ul li a:hover {
+  opacity: 100%;
+}
+header .header nav ul li a.signup {
+  font-weight: 700;
+}
+
+#hero {
+  background-image: url("../image/image 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0px -500px 500px -500px #ffffff;
+}
+#hero .hero h1 {
+  font-size: 72px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 82.79px;
+  max-width: 700px;
+  padding: 100px 0;
+}
+#hero .hero .categories {
+  padding-bottom: 200px;
+}
+#hero .hero .categories h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  padding-bottom: 25px;
+}
+#hero .hero .categories ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#hero .hero .categories ul li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+#hero .hero .categories ul li a p {
+  color: #ffffff;
+  opacity: 40%;
+}
+#hero .hero .categories ul li a:hover p {
+  opacity: 100%;
+}
+
+#top-validation {
+  position: relative;
+  top: -100px;
+}
+#top-validation .top-validation h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  padding-bottom: 25px;
+}
+#top-validation .top-validation swiper-container swiper-slide {
+  position: relative;
+}
+#top-validation .top-validation swiper-container swiper-slide img {
+  border-radius: 8px;
+}
+#top-validation .top-validation swiper-container swiper-slide p {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+}
+
+#offer .offer h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000000;
+  padding-bottom: 25px;
+}
+#offer .offer swiper-container swiper-slide .box {
+  max-width: 700px;
+  display: flex;
+  gap: 24px;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0px 4px 16px rgba(158, 158, 158, 0.2509803922);
+}
+#offer .offer swiper-container swiper-slide .box img {
+  border-radius: 20px;
+}
+#offer .offer swiper-container swiper-slide .box .context {
+  position: relative;
+}
+#offer .offer swiper-container swiper-slide .box .context h3 {
+  opacity: 50%;
+}
+#offer .offer swiper-container swiper-slide .box .context p {
+  opacity: 50%;
+}
+#offer .offer swiper-container swiper-slide .box .context h2 {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 10px 0;
+}
+#offer .offer swiper-container swiper-slide .box .context button {
+  background-color: #2659c3;
+  padding: 16px 32px;
+  border: 1px solid #2659c3;
+  border-radius: 32px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+}
+#offer .offer swiper-container swiper-slide .box .context button:hover {
+  opacity: 50%;
+}
+
+#browse {
+  padding-top: 50px;
+}
+#browse .browse h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000000;
+  padding-bottom: 25px;
+}
+#browse .browse swiper-container swiper-slide {
+  position: relative;
+}
+#browse .browse swiper-container swiper-slide img {
+  border-radius: 8px;
+}
+#browse .browse swiper-container swiper-slide p {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+}
+
+#plan {
+  padding: 50px 0;
+}
+#plan .plan {
+  position: relative;
+}
+#plan .plan img {
+  border-radius: 24px;
+}
+#plan .plan h1 {
+  position: absolute;
+  top: 20%;
+  left: 100px;
+  font-size: 56px;
+  font-weight: 700;
+  color: #ffffff;
+  max-width: 670px;
+}
+#plan .plan p {
+  position: absolute;
+  top: 55%;
+  left: 100px;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+#connect {
+  padding-bottom: 50px;
+}
+#connect .connect h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000000;
+  padding-bottom: 25px;
+}
+#connect .connect .card {
+  padding: 10px;
+  border: none;
+  box-shadow: 0px 4px 16px rgba(158, 158, 158, 0.2509803922);
+}
+#connect .connect .card .text {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#connect .connect .card .text h2 {
+  font-size: 24px;
+}
+#connect .connect .card .text h3 {
+  opacity: 50%;
+}
+#connect .connect .card .text h4 {
+  opacity: 50%;
+}
+
+#app {
+  background-image: url("../image/image 21.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#app .app {
+  padding: 80px 0 110px 0;
+}
+#app .app .row .col-3 {
+  position: relative;
+}
+#app .app .row .col-3 img {
+  position: absolute;
+  top: 0;
+}
+#app .app .row .col-3 img.screen {
+  top: 15px;
+  left: 25px;
+}
+#app .app .row .col-9 h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+}
+#app .app .row .col-9 p {
+  font-size: 24px;
+  color: #ffffff;
+  max-width: 750px;
+  padding: 30px 0 50px 0;
+}
+#app .app .row .col-9 .connection {
+  display: flex;
+  gap: 25px;
+}
+#app .app .row .col-9 .connection .mobile-email .buttons button {
+  padding: 8px 16px;
+  border-radius: 16px;
+  border-color: transparent;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 20px;
+}
+#app .app .row .col-9 .connection .mobile-email .buttons button.active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+#app .app .row .col-9 .connection .mobile-email p {
+  font-size: 14px;
+  padding: 20px 0;
+}
+#app .app .row .col-9 .connection .mobile-email .search {
+  position: relative;
+}
+#app .app .row .col-9 .connection .mobile-email .search input[type=search] {
+  width: 450px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-color: transparent;
+  border-radius: 16px;
+  padding: 8px 16px;
+}
+#app .app .row .col-9 .connection .mobile-email .search input[type=search]:focus {
+  outline-color: #2659c3;
+}
+#app .app .row .col-9 .connection .mobile-email .search .holder {
+  position: absolute;
+  top: 5%;
+  left: 20px;
+  font-size: 16px;
+}
+#app .app .row .col-9 .connection .mobile-email .search .search-button {
+  position: absolute;
+  left: 325px;
+  top: 15%;
+  background-color: #ffffff;
+  border-color: transparent;
+  color: #2659c3;
+  padding: 12px 32px;
+  border-radius: 32px;
+  font-weight: 700;
+}
+#app .app .row .col-9 .connection .mobile-email .search .search-button:hover {
+  color: #ffffff;
+  background-color: #2659c3;
+}
+#app .app .row .col-9 .connection .or {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+#app .app .row .col-9 .connection .or .line {
+  transform: rotate(90deg);
+  color: #ffffff;
+}
+#app .app .row .col-9 .connection .store {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer {
+  background-color: #141414;
+}
+footer .footer {
+  padding: 30px 0;
+}
+footer .footer .info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+footer .footer .info .footer-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+footer .footer .info .footer-text ul li {
+  padding: 5px;
+}
+footer .footer .info .footer-text ul li a {
+  font-size: 13px;
+  color: #808080;
+}
+footer .footer .info .info-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer .info .info-buttons button {
+  color: #808080;
+  border: 1px solid #808080;
+  background-color: transparent;
+  font-size: 13px;
+  padding: 10px 15px;
+}
+footer .footer .info .info-buttons .social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+footer .footer .info .copyright {
+  font-size: 11px;
+  color: #808080;
+}
+
+#hero-mountain {
+  background-image: url("../image/image 1 (1).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0px -500px 500px -500px #ffffff;
+}
+#hero-mountain .hero h1 {
+  font-size: 72px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 82.79px;
+  max-width: 700px;
+  padding-top: 100px;
+}
+#hero-mountain .hero .hero-search {
+  background-color: rgba(255, 255, 255, 0.1019607843);
+  border: none;
+  border-radius: 25px;
+  margin: 50px 0;
+}
+#hero-mountain .hero .hero-search form {
+  padding: 12px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#hero-mountain .hero .hero-search form .search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  opacity: 70%;
+}
+#hero-mountain .hero .hero-search form .check-in {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  opacity: 70%;
+}
+#hero-mountain .hero .hero-search form .check-out {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  opacity: 70%;
+}
+#hero-mountain .hero .hero-search form .people {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  opacity: 70%;
+}
+#hero-mountain .hero .hero-search form button {
+  padding: 12px 32px;
+  color: #1B4E7A;
+  font-weight: 700;
+  background-color: #ffffff;
+  border-color: transparent;
+  border-radius: 32px;
+}
+#hero-mountain .hero .hero-search form button:hover {
+  background-color: #1B4E7A;
+  color: #ffffff;
+}
+#hero-mountain .hero .categories {
+  padding-bottom: 200px;
+}
+#hero-mountain .hero .categories h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  padding-bottom: 25px;
+}
+#hero-mountain .hero .categories ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#hero-mountain .hero .categories ul li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+#hero-mountain .hero .categories ul li a p {
+  color: #ffffff;
+  opacity: 40%;
+}
+#hero-mountain .hero .categories ul li a:hover p {
+  opacity: 100%;
+}
+
+#popular {
+  position: relative;
+  top: -100px;
+}
+#popular .popular h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  padding-bottom: 25px;
+}
+#viewed .viewed h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000000;
+  padding-bottom: 25px;
+}
+#viewed .cards {
+  display: flex;
+  gap: 10px;
+}
+#viewed .cards .card-summer {
+  background-image: url("../image/image 26.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 330px;
+  border-radius: 16px;
+  padding: 50px 20px;
+}
+#viewed .cards .card-summer h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+#viewed .cards .card-summer p {
+  color: #ffffff;
+}
+
+#inclusive {
+  padding-top: 50px;
+}
+#inclusive .inclusive h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000000;
+  padding-bottom: 25px;
+}
+#honeymoon {
+  padding: 50px 0;
+}
+#honeymoon .honeymoon h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000000;
+  padding-bottom: 25px;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,85 @@
+%card {
+  .card {
+   max-width: 330px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 16px;
+    .img {
+      position: relative;
+      img {
+        border-radius: 16px;
+      }
+      .fa-heart {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 24px;
+        color: #ffffff;
+      }
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 10px 0;
+      .part-1 {
+        .title {
+          @include flexbox;
+          h1 {
+            font-size: 24px;
+            color: #000000;
+            padding: 0;
+          }
+          p {
+            font-size: 24px;
+            i {
+              font-size: 20px;
+            }
+          }
+        }
+        .days {
+          opacity: 50%;
+        }
+      }
+      .part-2 {
+        @include flexbox;
+        .service {
+          @include flexbox;
+          flex-direction: column;
+          i {
+            opacity: 50%;
+          }
+          p {
+            opacity: 50%;
+            font-size: 12px;
+          }
+        }
+      }
+      .part-3 {
+        ol {
+          list-style-type: disc;
+          margin: 0;
+          padding: 20px;
+          li {
+            opacity: 50%;
+          }
+        }
+      }
+      .part-4 {
+        p {
+          font-size: 24px;
+          font-weight: 700;
+          sub {
+            font-size: 12px;
+            opacity: 50%;
+          }
+          span {
+            font-size: 16px;
+            font-weight: 100;
+            text-decoration: line-through !important;
+          }
+        }
+      }
+    }
+  }
+}

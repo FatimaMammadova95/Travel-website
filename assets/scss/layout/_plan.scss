@@ -1,0 +1,25 @@
+#plan {
+  padding: 50px 0;
+  .plan {
+    position: relative;
+    img {
+      border-radius: 24px;
+    }
+    h1 {
+      position: absolute;
+      top: 20%;
+      left: 100px;
+      font-size: 56px;
+      font-weight: 700;
+      color: #ffffff;
+      max-width: 670px;
+    }
+    p {
+      position: absolute;
+      top: 55%;
+      left: 100px;
+      font-size: 32px;
+      color: #ffffff;
+    }
+  }
+}

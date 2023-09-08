@@ -1,0 +1,17 @@
+#popular {
+  position: relative;
+  top: -100px;
+  .popular {
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #ffffff;
+      padding-bottom: 25px;
+    }
+    swiper-container{
+        swiper-slide{
+            @extend %card;
+        }
+    }
+  }
+}
